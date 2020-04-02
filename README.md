@@ -2,7 +2,7 @@
 This is a Python based web scraper designed particularly for scraping information about students <br> 
 clearing Google Summer of Code in the past years. It collects the name, organisation and project<br>
 details of each successful candidate which is available on Google's official webpage: https://summerofcode.withgoogle.com<br> 
-and stores<br> it in a ```.csv``` file.<br>
+and stores it in a ```.csv``` file.<br>
 It further compares the obtained data with the student database in ```.json``` format and returns<br>
 the name of the relevant matches. 
 <br>
@@ -15,7 +15,7 @@ sudo apt install pip
 pip install beautifulsoup4 requests
 ```
 
-<br>
+
 ## How to Use
 - Download the repository in your local machine. Make sure you have all the dependencies installed.
 - You might want to create a different .csv file for storing the data. If this is the case, then change<br>
