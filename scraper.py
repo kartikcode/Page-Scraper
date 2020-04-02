@@ -5,10 +5,12 @@ import csv
 csv_file = open('org_info.csv','w')
 csv_write = csv.writer(csv_file)
 csv_write.writerow(['Student Name','Organisation','Project'])
-
+url=input("Enter the URL:")
+url=url[:len(url)-1]
 
 for j in range(1,13):
-    url = "https://summerofcode.withgoogle.com/archive/2019/projects/?page=" + str(j)
+    #url = "https://summerofcode.withgoogle.com/archive/2019/projects/?page=" + str(j)
+    url = url + str(j)
     source = requests.get(url).text
     #print(source)
     soup = BeautifulSoup(source,"lxml")
