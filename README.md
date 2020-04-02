@@ -26,5 +26,5 @@ and accordingly change the name in check.py( scraper.py remains unchanged).
 ```python
 python scraper.py
 ```
-
+- Give in the URL as input. This shall generate 
 
