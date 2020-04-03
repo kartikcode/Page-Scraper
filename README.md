@@ -26,5 +26,6 @@ and accordingly change the name in check.py( scraper.py remains unchanged).
 ```python
 python scraper.py
 ```
-- Give in the URL as input. This shall generate 
+- Give in the URL as input. This shall store the data in the specified```.csv``` file. (org_info.csv in this case)
+- Next up, run the ```check.py``` file which gives the common name entries as output along with some other details.
 
