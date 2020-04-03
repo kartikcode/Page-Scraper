@@ -12,7 +12,8 @@ with open('org_info.csv','r') as csv_file:
     next(csv_reader)
     for line in csv_reader:
         name = line[0]
-        flag=0
+        
+        list1=name.split(' ')
         if(len(name.split(' '))<2):
             continue
         if set(name).difference(ascii_letters + " "):
@@ -21,11 +22,16 @@ with open('org_info.csv','r') as csv_file:
             continue
 
         for person in file_j:
-            if(person['n']==name):
+            list2 = person['n'].split('  ')
+
+            list3 = person['n'].split(' ')
+            
+            if list1==list2 or list1==list3:
                 print("Name: "+name)
                 print("Roll No: "+person['i'])
                 print("Branch: "+person['d'])
                 print("Organisation: "+ line[1])
                 print("Project: "+ line[2])  
                 print()
+                
 
